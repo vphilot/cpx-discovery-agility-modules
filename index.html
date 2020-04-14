@@ -51,12 +51,6 @@
                               <span>Promos</span>
                             </a>
                           </li>
-                          <li class="">
-                            <a href="#">
-                              <span class="icon is-small"><i class="far fa-star" aria-hidden="true"></i></span>
-                              <span>Intro</span>
-                            </a>
-                          </li>
                         </ul>
                       </div>
                 </section>
@@ -64,13 +58,13 @@
                 <section class="section">
                     <h1 class="title is-2" id="intro">Intro</h1>
                     <p class="content">This is an outline of our most urgent needs in terms of content updates. Being able to modularize and componentize these sections would empower content editors to make changes on the fly and enable us to have more time to work on other higher priority projects.</p>
-                    <p class="content">Please notice that we're only focusing on the <strong>most frequenly updated items</strong> on this document. There are atill several other opportunities for modularization on the long run.
+                    <p class="content">Please notice that we're only focusing on the <strong>most frequently updated items</strong> on this document. There are still several other opportunities for modularization in the long run.
                     </p>
-                    <p><strong>Suggested common requirements for all new modules:</strong></p>
+                    <p id="general-requirements"><strong>Suggested common specs for all new modules:</strong></p>
                     <ul class="content">
                         <li><i class="fas fa-exclamation-circle"></i>Have customizable classes for every single item, including parents and children</li>
                         <li><i class="fas fa-exclamation-circle"></i>Avoid bootstrap classes so we can have flexibility and avoid implementing overrides</li>
-                        <li><i class="fas fa-exclamation-circle"></i>Avoid unecessary nesting as much as possible</li>
+                        <li><i class="fas fa-exclamation-circle"></i>Avoid unnecessary nesting as much as possible</li>
                         <li><i class="fas fa-exclamation-circle"></i>Need to meet basic accessibility requirements out of the box</li>
                         <li><i class="fas fa-exclamation-circle"></i>Need to be responsive and mobile-first</li>
                         <li class="has-text-danger"><i class="fas fa-exclamation-circle"></i>Must prioritize pulling information from our API and databases and avoid manual entry to keep consistency throughout our ecosystem</li>
@@ -82,7 +76,7 @@
                     <span class="tag is-info is-medium"><i class="far fa-clock"></i>Update frequency: 2 - 3 times a week</span>
                     <span class="tag is-danger is-medium"><i class="fas fa-paint-brush"></i>To be redesigned</span>
                     <div class="notification is-danger is-light">
-                        All the following pages are currently running based off a pre-2017 design which we plan soon to be under revision.
+                        All the following pages are currently running based on a pre-2017 design which we plan soon to be under revision.
                     </div>
                     <p class="content">Cineplex Events updates are requested 2 to 3 times a week, including rotator and markup changes to the following pages:</p>
                     <ul class="content">
@@ -111,12 +105,13 @@
                         <li><a href="https://www.cineplex.com/Events/anime" target="_blank"><i class="fas fa-arrow-right"></i>Events / Anime (EN only)</a></li>
                         <li><a href="https://www.cineplex.com/Events/WWE" target="_blank"><i class="fas fa-arrow-right"></i>Events / WWE (EN - seasonal)</a></li>
                         <li><a href="https://www.cineplex.com/Evenements/WWE" target="_blank"> <i class="fas fa-arrow-right"></i>Events / WWE (FR - seasonal)</a></li>
+                        <li><a href="https://www.cineplex.com/Events/OneNighters" target="_blank"> <i class="fas fa-arrow-right"></i>Events - One Nighters (EN only)</a></li>
                     </ul>
                     <p class="content">Inside the Cineplex Events ecosystem, these are the most demanding items in terms of update requests that would indicate a need for modularization: </p>
                     
-                    <h2 class="title is-3"><i class="fas fa-cube"></i>Movie item - simple</h2>
+                    <h2 class="title is-3" id="events-movie-item-simple"><i class="fas fa-cube"></i>Movie item - simple</h2>
                     <img src="img/events-movie-item-simple.png" alt="">
-                    <p><strong>Requirements:</strong></p>
+                    <p><strong>Specs:</strong></p>
                     <ul class="content">
                         <li><i class="fas fa-exclamation-circle"></i>Poster + CTA</li>
                         <li><i class="fas fa-exclamation-circle"></i>Optional tagline with version indication (FR only)</li>
@@ -125,7 +120,7 @@
                     
                     <h2 class="title is-3"><i class="fas fa-cube"></i>Movie item - detailed</h2>
                     <img src="img/events-movie-item-detailed.png" alt="">
-                    <p><strong>Requirements:</strong></p>
+                    <p><strong>Specs:</strong></p>
                     <ul class="content">
                         <li><i class="fas fa-exclamation-circle"></i>Title, Poster, and Dates are always present</li>
                         <li><i class="fas fa-exclamation-circle"></i>The following categorias might or not be present depending on event type: Director, Directed for Stage, Directed for Film, Cast, Synopsis, Dates (LIVE), Dates (ENCORE)</li>
@@ -139,7 +134,7 @@
                     
                     <h2 class="title is-3"><i class="fas fa-cube"></i>Admission and pricing info</h2>
                     <img src="img/events-admission-pricing.png" alt="">
-                    <p><strong>Requirements:</strong></p>
+                    <p><strong>Specs:</strong></p>
                     <ul class="content">
                         <li><i class="fas fa-exclamation-circle"></i>Price categories are added / removed as program details change</li>
                         <li><i class="fas fa-exclamation-circle"></i>Content editors should be able to update pricing info and legal disclaimers / bulk purchase info</li>
@@ -151,7 +146,7 @@
                     <div class="notification is-danger is-light">
                         The current Participating Theatres module is one of the most outdates ones we have in terms of visual language, funcionality, responsiveness, and accessibility. This is a reference of what we have available &mdash; for a more modern implementation inside cineplex.com, <a href="https://uat-www.cineplex.com/theatres/sensoryfriendly-2020">please refer to this redesign currenly under approval</a>.
                     </div>
-                    <p><strong>Requirements:</strong></p>
+                    <p><strong>Specs:</strong></p>
                     <ul class="content">
                         <li><i class="fas fa-exclamation-circle"></i>Users need to be able to filter by province</li>
                         <li><i class="fas fa-exclamation-circle"></i>Efficiency / relevance of displaying theatre logos must be carefully tested</li>
@@ -160,7 +155,7 @@
                     
                     <h2 class="title is-3"><i class="fas fa-cube"></i>Trailer hero</h2>
                     <img src="img/events-trailer-hero.png" alt="">
-                    <p><strong>Requirements:</strong></p>
+                    <p><strong>Specs:</strong></p>
                     <ul class="content">
                         <li><i class="fas fa-exclamation-circle"></i>Content editors should be able to quickly swap Brightcove IDs to update the trailers</li>
                         <li><i class="fas fa-exclamation-circle"></i>Trailer must be full width and have Brightcove's scripts built in</li>
@@ -216,7 +211,7 @@
                    
                     <h2 class="title is-3"><i class="fas fa-cube"></i>Theatre location list - simple</h2>
                     <img src="img/theatres-location-list-simple.png" alt="">
-                    <p><strong>Requirements:</strong></p>
+                    <p><strong>Specs:</strong></p>
                     <ul class="content">
                         <li><i class="fas fa-exclamation-circle"></i>Each list item should link to a different theatre</li>
                         <li><i class="fas fa-exclamation-circle"></i>Content editors should be able to update list location seamleslly</li>
@@ -225,7 +220,7 @@
 
                     <h2 class="title is-3"><i class="fas fa-cube"></i>Theatre location list - detailed</h2>
                     <img src="img/theatres-location-list-detailed.png" alt="">
-                    <p><strong>Requirements:</strong></p>
+                    <p><strong>Specs:</strong></p>
                     <ul class="content">
                         <li><i class="fas fa-exclamation-circle"></i>Please refer to Theatre location list - simple</li>
                         <li><i class="fas fa-exclamation-circle"></i>Full address should be pulled from the API to avoid duplicate / diverging information through our ecosystem</li>
@@ -236,14 +231,14 @@
                     <div class="notification is-danger is-light">
                         The current Participating Theatres module is one of the most outdates ones we have in terms of visual language, funcionality, responsiveness, and accessibility. </a>.
                     </div>
-                    <p><strong>Requirements:</strong></p>
+                    <p><strong>Specs:</strong></p>
                     <ul class="content">
                         <li><i class="fas fa-exclamation-circle"></i>Please refer to <a href="#events-participating-theatres">Events - Participating theatres</a></li>
                     </ul>
 
-                    <h2 class="title is-3"><i class="fas fa-cube"></i>Theatre location list - new</h2>
+                    <h2 class="title is-3" id="theatres-location-list-new"><i class="fas fa-cube"></i>Theatre location list - new</h2>
                     <img src="img/theatres-location-list-new.png" alt="">
-                    <p><strong>Requirements:</strong></p>
+                    <p><strong>Specs:</strong></p>
                     <ul class="content">
                         <li><i class="fas fa-exclamation-circle"></i>Users should be able to filter by Province</a></li>
                         <li><i class="fas fa-exclamation-circle"></i>Some Marketing briefs require the full theatre name to be visible, so the flexibility to have the list full width or 2 columns must exist to avoid weird break points</a></li>
@@ -257,6 +252,7 @@
 
                     <h2 class="title is-3" id="theatres-movie-carousel-new"><i class="fas fa-cube"></i>Theatre movie carousel (customizable) - new</h2>
                     <img src="img/theatres-movie-carousel-new.png" alt="">
+                    <p><strong>Specs:</strong></p>
                     <ul class="content">
                         <li><i class="fas fa-exclamation-circle"></i>Content editors should be able to add / remove movies to their liking in order to fulfill marketing requirements</a></li>
                         <li><i class="fas fa-exclamation-circle"></i>Ideally, content editors should be able to specifiy movie name or ID and all the information would be pulled from our APIs</a></li>
@@ -266,6 +262,7 @@
                     <h2 class="title is-3"><i class="fas fa-cube"></i>Theatre Now Playing / Upcoming movie list by program</h2>
                     <img src="img/tdb.jpg" alt="">
                     <p class="content">This is one of the most required modules by our stakeholders: a movie grid of movies by specialty theatre divided in two categories: <strong>Now Playing Titles</strong> by specialty and <strong>Upcoming Titles</strong> by specialty.</p>
+                    <p><strong>Specs:</strong></p>
                     <ul class="content">
                         <li><i class="fas fa-exclamation-circle"></i>Content editors shouldn't be able to make adjustments</a></li>
                         <li><i class="fas fa-exclamation-circle"></i>Now Playing and Upcoming titles would be pulled directly from our APIs / databases</a></li>
@@ -273,8 +270,9 @@
                         <li><i class="fas fa-exclamation-circle"></i>Front End Requirements should be similar to the <a href="#theatres-movie-carousel-new">customizable movie carousel</a></a></li>
                     </ul>
 
-                    <h2 class="title is-3"><i class="fas fa-cube"></i>Theatre / Program FAQs</h2>
+                    <h2 class="title is-3" id="theatres-faq"><i class="fas fa-cube"></i>Theatre / Program FAQs</h2>
                     <img src="img/theatres-faq.png" alt="">
+                    <p><strong>Specs:</strong></p>
                     <ul class="content">
                         <li><i class="fas fa-exclamation-circle"></i>Content editors should be able to add / remove FAQ questions and answers to their liking</a></li>
                         <li><i class="fas fa-exclamation-circle"></i>Module must be screen reader friendly</a></li>
@@ -286,6 +284,7 @@
                     <div class="notification is-danger is-light">
                         Deprecated design, please use only as a reference for content structure
                     </div>
+                    <p><strong>Specs:</strong></p>
                     <ul class="content">
                         <li><i class="fas fa-exclamation-circle"></i>Must contain: Promo title, Promo body copy, Promo CTA, Promo legal, and Promo creative (image)</a></li>
                         <li><i class="fas fa-exclamation-circle"></i>Content editors should be able to add and edit one or more promos to fulfill different marketing initiative requirements</a></li>
@@ -318,23 +317,76 @@
                     <p class="content">Cineplex Landing and Promo pages are created according to Marketing initiatives. These pages serve as an endpoint for ads and other paid/organic/social media traffic. The look / feel and functionality is unique to each project, considering the assets created by Creative Services and our Front End Design from UXD.</p>
                     <p class="content"><strong>Promo pages usually run once a year for a limited amount of time and can benefit from having modules used over again.</strong> Some examples for Landing / Promo pages are:</p>
                     <ul class="content">
-                        <li><a href="https://www.cineplex.com/Promos/NFL2019" target="_blank"><i class="fas fa-arrow-right"></i>Events / NFL (EN - seasonal)</a></li>
-                        <li><a href="https://www.cineplex.com/Promos/NFL2019?lang=fr-ca" target="_blank"><i class="fas fa-arrow-right"></i>Events / NFL (FR - seasonal)</a></li>
+                        <li><a href="https://www.cineplex.com/promos/promotions" target="_blank"><i class="fas fa-arrow-right"></i>Promos - Promotions help page (EN)</a></li>
+                        <li><a href="https://www.cineplex.com/promos/promotions?lang=fr-ca" target="_blank"><i class="fas fa-arrow-right"></i>Promos - Promotions help page (FR)</a></li>
+                        <li><a href="https://www.cineplex.com/Promos/NFL2019" target="_blank"><i class="fas fa-arrow-right"></i>Events / NFL (EN)</a></li>
+                        <li><a href="https://www.cineplex.com/Promos/NFL2019?lang=fr-ca" target="_blank"><i class="fas fa-arrow-right"></i>Events / NFL (FR)</a></li>
                         <li><a href="https://www.cineplex.com/Promos/holidaygiftbundle2019" target="_blank"><i class="fas fa-arrow-right"></i>Promos / Holiday Gift Bundle (EN)</a></li>
                         <li><a href="https://www.cineplex.com/Promos/holidaygiftbundle2019?lang=fr-ca" target="_blank"><i class="fas fa-arrow-right"></i>Promos / Holiday Gift Bundle (FR)</a></li>
+                        <li><a href="https://www.cineplex.com/Promos/CommunityDay2019" target="_blank"><i class="fas fa-arrow-right"></i>Promos / Community Day (EN)</a></li>
+                        <li><a href="https://www.cineplex.com/Promos/JourneeFamiliale2019" target="_blank"><i class="fas fa-arrow-right"></i>Promos / Community Day (FR)</a></li>
+                        <li><a href="https://www.cineplex.com/Promos/general-mills-2020" target="_blank"><i class="fas fa-arrow-right"></i>Promos / General Mills (EN)</a></li>
+                        <li><a href="https://www.cineplex.com/Promos/general-mills-2020?lang=fr-ca" target="_blank"><i class="fas fa-arrow-right"></i>Promos / General Mills (FR)</a></li>
+                        <li><a href="https://www.cineplex.com/Promos/marchbreakmovies" target="_blank"><i class="fas fa-arrow-right"></i>Promos / March Break Movies (EN)</a></li>
+                        <li><a href="https://www.cineplex.com/Promos/marchbreakmovies?lang=fr-ca" target="_blank"><i class="fas fa-arrow-right"></i>Promos / March Break Movies (FR)</a></li>
+                        <li><a href="https://www.cineplex.com/Promos/popcorn-day-2020" target="_blank"><i class="fas fa-arrow-right"></i>Promos / National Popcorn Day (EN)</a></li>
+                        <li><a href="https://www.cineplex.com/Promos/popcorn-day-2020?lang=fr-ca" target="_blank"><i class="fas fa-arrow-right"></i>Promos / National Popcorn Day (FR)</a></li>
+                        <li><a href="https://www.cineplex.com/Promos/_old/regina-popcorn" target="_blank"><i class="fas fa-arrow-right"></i>Promos / Regina (EN only)</a></li>
+                        <li><a href="https://www.cineplex.com/Promos/scene-half-points" target="_blank"><i class="fas fa-arrow-right"></i>Promos / SCENE Half Points (EN)</a></li>
+                        <li><a href="https://www.cineplex.com/Promos/scene-half-points?lang=fr-ca" target="_blank"><i class="fas fa-arrow-right"></i>Promos / SCENE Half Points (FR)</a></li>
+                        <li><a href="https://www.cineplex.com/Promos/star-wars-skywalker" target="_blank"><i class="fas fa-arrow-right"></i>Promos / Star Wars Skywalker (EN)</a></li>
+                        <li><a href="https://www.cineplex.com/Promos/star-wars-skywalker?lang=fr-ca" target="_blank"><i class="fas fa-arrow-right"></i>Promos / Star Wars Skywalker (FR)</a></li>
+                        <li><a href="https://www.cineplex.com/Promos/tangerine-tuesdays" target="_blank"><i class="fas fa-arrow-right"></i>Promos / Tangerine Tuesdays (EN)</a></li>
+                        <li><a href="https://www.cineplex.com/Promos/les-mardis-tangerine" target="_blank"><i class="fas fa-arrow-right"></i>Promos / Tangerine Tuesdays (FR)</a></li>
                     </ul>
 
                     <p class="content">These are the usual components we use when asked to build a new Landing / Promo page:</p>
                    
-                    <h2 class="title is-3"><i class="fas fa-cube"></i>Theatre location list - simple</h2>
-                    <img src="img/theatres-location-list-simple.png" alt="">
-                    <p><strong>Requirements:</strong></p>
+                    <h2 class="title is-3"><i class="fas fa-cube"></i>Landing page Hero + titles</h2>
+                    <img src="img/promos-hero.png" alt="">
+                    <p><strong>Specs:</strong></p>
                     <ul class="content">
-                        <li><i class="fas fa-exclamation-circle"></i>Each list item should link to a different theatre</li>
-                        <li><i class="fas fa-exclamation-circle"></i>Content editors should be able to update list location seamleslly</li>
-                        <li><i class="fas fa-exclamation-circle"></i>Unordered list should be responsive and break between 2 / 1 columns depending on viewport size</li>
+                        <li><i class="fas fa-exclamation-circle"></i>Full width hero image (including responsive srcset)</li>
+                        <li><i class="fas fa-exclamation-circle"></i>Content editors should be able different images to desktop hero, tablet hero, and moible hero</li>
+                        <li><i class="fas fa-exclamation-circle"></i>h1 main title + h2/h3 tagline</li>
+                        <li><i class="fas fa-exclamation-circle"></i>(optional / advanced) content editors should be able to upload SVG TTs along with background images (specs TBD)</li>
+                        <li><i class="fas fa-exclamation-circle"></i>Content editors should be able to upload Page Skins directly on the CMS</li>
                     </ul>
-                    
+
+                    <h2 class="title is-3"><i class="fas fa-cube"></i>Promo body copy</h2>
+                    <img src="img/promos-body.png" alt="">
+                    <p><strong>Specs:</strong></p>
+                    <ul class="content">
+                        <li><i class="fas fa-exclamation-circle"></i>Simple body copy with consistent paragraph spacing and size</a></li>
+                    </ul>
+
+                    <h2 class="title is-3"><i class="fas fa-cube"></i>Promo participating movies</h2>
+                    <img src="img/promos-moviegrid.png" alt="">
+                    <p><strong>Specs:</strong></p>
+                    <ul class="content">
+                        <li><i class="fas fa-exclamation-circle"></i>Please refer to <a href="#events-movie-item-simple">Movie item - simple</a></li>
+                    </ul>
+
+                    <h2 class="title is-3"><i class="fas fa-cube"></i>Promo participating locations</h2>
+                    <img src="img/promos-locations.png" alt="">
+                    <p><strong>Specs:</strong></p>
+                    <ul class="content">
+                        <li><i class="fas fa-exclamation-circle"></i>Please refer to <a href="#theatres-location-list-new">Theatres Location List - new</a></li>
+                    </ul>
+
+                    <h2 class="title is-3"><i class="fas fa-cube"></i>Promo FAQs / Terms and Conditions</h2>
+                    <img src="img/promos-faqs.png" alt="">
+                    <p><strong>Specs:</strong></p>
+                    <ul class="content">
+                        <li><i class="fas fa-exclamation-circle"></i>Please refer to <a href="#theatres-faq">Theatre / Program FAQs</a></li>
+                    </ul>
+
+                    <h2 class="title is-3"><i class="fas fa-cube"></i>Promo legal and terms</h2>
+                    <img src="img/promos-legal.png" alt="">
+                    <p><strong>Specs:</strong></p>
+                    <ul class="content">
+                        <li><i class="fas fa-exclamation-circle"></i>Simple legal copy with consistent paragraph spacing and size</a></li>
+                    </ul>
                 </section>
 
             </div>
